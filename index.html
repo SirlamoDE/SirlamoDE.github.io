@@ -1,34 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Meshach Adedotun - Cybersecurity, Data Engineering, Web Development">
+    <title>Meshach Adedotun - Portfolio</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
 </head>
+
+
 <body>
 
     <header>
-        <h1>Meshach Adedotun's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Meshach Adedotun</h1>
+        <p>Cybersecurity | Data Engineering | Web Development</p>
     </header>
+       
+    <!-- Nav bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <!-- Page-specific content goes here -->
-        <h2>Welcome to My Portfolio</h2>
-        <p>I'm a passionate software developer interested in developing secure applications, and data engineering, and more.</p>
-    </main>
+    <!-- Professional Introduction -->
+    <section class="intro">
+        <img src="images/profile.jpg" alt="Meshach Adedotun" class="profile-photo">
+        <p>Hi! I'm Meshach Adedotun, a passionate developer and entrepreneur specializing in cybersecurity, data engineering, and web development. I help businesses leverage data and secure their infrastructure to thrive in the digital age.</p>
+    </section>
 
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-set">
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, Node.js, Express, and MySQL.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Data Engineering</h3>
+                <p>Python, PostgreSQL, data pipelines, and analytics.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Cybersecurity</h3>
+                <p>Google Cybersecurity Certificate, system security, and more.</p>   
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects/Portfolio Section -->
+    <section class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project">
+            <h3>Accountability Management Tool</h3>
+            <p>An app that helps users track goals and monitor progress with features like smart scheduling and progress-based rewards.</p>
+            <a href="https://github.com/sirlamode/accountability-tool" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Telemedicine Website</h3>
+            <p>A responsive website built with HTML, CSS, and JavaScript to connect doctors and patients remotely.</p>
+            <a href="https://sirlamode.github.io/telemedicine" target="_blank">Live Demo</a>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Want to Collaborate?</h2>
+        <p>If you're looking for a developer who is passionate about cybersecurity, data engineering, and web development, feel free to reach out!</p>
+        <a href="contact.html" class="btn">Contact Me</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Meshach Adedotun</p>
+        <ul class="social">
+            <li><a href="https://github.com/sirlamode" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/sirlamode" target="_blank">LinkedIn</a></li>
+        </ul>
     </footer>
 
-</body>
+  </body>
 </html>
 

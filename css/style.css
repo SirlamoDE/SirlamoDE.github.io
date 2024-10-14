@@ -1,47 +1,160 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header {
-    background: #333;
+header, footer {
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
 }
 
-main {
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
     padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.intro .profile-photo {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.skills .skill-set {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills .skill {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.projects .project {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projects .project a:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.cta .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta .btn:hover {
+    background-color: #555;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
+    padding: 10px;
+    background-color: #333;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .skills .skill-set {
+        flex-direction: column;
+    }
+
+    .skills .skill, .projects .project {
+        width: 100%;
+    }
+
+    .intro .profile-photo {
+        width: 100px;
+    }
 }
