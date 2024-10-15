@@ -7,6 +7,10 @@ body {
     color: #333;
 }
 
+#pics{
+    width: 200px; border-radius: 50%;
+}
+
 header, footer {
     background-color: #333;
     color: #fff;

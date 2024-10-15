@@ -7,24 +7,101 @@
 
     </head>
     <body>
-        <!-- visitor's message goes in here -->
-        <form id="my-form" action="https://formspree.io/f/xpwzzdkq" method="POST">
-            <div class="message-form">
-                <label>Email:</label>
-                <input type="email" name="email" placeholder="Email here"/>
-            </div>
-            
-            <div class="message-form">
-                <label for="message" >Message:</label>
-                <input type="text" id="message" name="message" placeholder="Kindly,leave your message here" required/>
-            </div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div id="message-form">
-                <button type="submit"  id="my-form-button">Submit</button>
-                <p id="my-form-status"></p>
-            </div>   
-            
-        </form>
+        <section id="profile-picture">
+            <img id="pic"  src="profile_image_transparent_refined.png" alt="Profile picture of Meshach Adedotun">
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Meshach O. Adedotun, a passionate software engineer, data engineer, and cybersecurity enthusiast with a background in chemical engineering. I have over 8 years of experience as an entrepreneur and business consultant, and I've recently transitioned into the tech world to harness my expertise in building robust solutions for businesses.</p>
+            <p>With my strong proficiency in Python, SQL, and JavaScript, I specialize in building reliable and secure systems. My interests span data engineering, cybersecurity, and web development, with a particular focus on delivering clean, trusted data that drives key business decisions. I enjoy creating efficient software solutions that help people and businesses thrive.</p>
+            <p>Currently, I'm developing a telemedicine platform, while also building my portfolio of innovative projects. I'm dedicated to lifelong learning, and I'm always exploring new technologies to improve my craft.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, JavaScript, C</li>
+                <li>Databases: MySQL, PostgreSQL</li>
+                <li>Web Development: HTML, CSS, JavaScript, Node.js, Express.js</li>
+                <li>Cybersecurity: Network Security, Data Protection, Vulnerability Assessment</li>
+                <li>Tools: linux,Git, GitHub, Excel,Power BI</li>
+                <li>Entrepreneurship & Consulting: 8+ years in business development and Operation Management</li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio -- Projects-in-Pipeline</h2>
+            <ul>
+                <li><strong>Telemedicine Platform</strong> - A full-stack application aimed at providing remote healthcare solutions. <a rel="noopener" href="https://github.com/sirlamode/telemedicine-project" target="_blank">View Project</a></li>
+                <li><strong>Accountability Tool</strong> - A productivity tool that monitors task execution and provides gamification features. <a rel="noopener" href="https://github.com/sirlamode/accountability-tool" target="_blank">View Project</a></li>
+                <li><strong>Data Engineering Pipelines</strong> - Built scalable pipelines using PostgreSQL and Python for efficient data flow. <a rel="noopener" href="https://github.com/sirlamode/data-engineering-pipelines" target="_blank">View Project</a></li>
+            </ul>
+        </section>
+
+
+        <section id="education">
+            <h2>Education & Certifications</h2>
+            <ul>
+                <li><strong>BSc in Chemical Engineering</strong> - Obafemi Awolowo University</li>
+                <li><strong>Google Cybersecurity Certificate</strong></li>
+                <li><strong>Professional Tracks</strong> - Data Engineering (Python and SQL) from DataCamp</li>
+                <li><strong>Career Essentials in System Administration</strong> - Microsoft & LinkedIn</li>
+                <li><strong>Career Essentials in Generative AI</strong> - Microsoft & LinkedIn</li>
+                <li><strong>Web Design using WordPress</strong> - Wootlab foundation</li>
+            </ul>
+        </section>
+
+        <!-- Contact me section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="my-form" action="https://formspree.io/f/xpwzzdkq" method="POST">
+                <div class="message-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+    
+                <div class="message-form">
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" placeholder="Email here" required/>
+                </div>
+                
+                <div class="message-form">
+                   <!--  <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>-->
+                    <label for="message" >Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Kindly,leave your message here" required></textarea>
+                </div>
+    
+                <div id="message-form">
+                    <button type="submit"  id="my-form-button">Submit</button>
+                    <p id="my-form-status"></p>
+                </div>   
+                
+            </form>
+
+        </section>
+
+        <footer>
+            <p>© 2024 Meshach Adedotun | <a rel="noopener" href="https://github.com/SirlamoDE" target="_blank">GitHub</a> | <a 
+               rel="noopener" href="https://linkedin.com/in/adedotun-meshach-16656115/" target="_blank">LinkedIn</a></p>
+        </footer>
+
+
+        <!-- visitor's message goes in here -->
+        
   
         <!-- AJAX SCRIPT STARTS HERE -->
         <script>
