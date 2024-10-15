@@ -162,3 +162,18 @@ footer ul li a:hover {
         width: 100px;
     }
 }
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    /* Styles for mobile */
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    /* Styles for tablets */
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media (min-width: 769px) {
+    /* Styles for desktop */
+}
