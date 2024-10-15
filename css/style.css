@@ -125,7 +125,7 @@ h2 {
 
 footer {
     padding: 10px;
-    background-color: #333;
+    background-color: #00000000;
 }
 
 footer ul {
@@ -305,9 +305,6 @@ form {
     color: #555;
 }
 
-#linkedin, #git {
-    color:whitesmoke ;
-}
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
