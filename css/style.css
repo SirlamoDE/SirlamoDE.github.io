@@ -125,7 +125,7 @@ h2 {
 
 footer {
     padding: 10px;
-    background-color: #333;
+    background-color: #00000000;
 }
 
 footer ul {
@@ -192,9 +192,6 @@ form {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#pics{
-    width: ;
-}
 
 /* Input and Textarea Fields */
 .message-form {
