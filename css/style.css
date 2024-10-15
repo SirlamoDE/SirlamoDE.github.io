@@ -305,6 +305,10 @@ form {
     color: #555;
 }
 
+#linkedin, #git {
+    color:whitesmoke ;
+}
+
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .about-me-container {
